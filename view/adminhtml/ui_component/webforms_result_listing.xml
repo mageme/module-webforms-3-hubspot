@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing>
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="hubspot"
+                    class="MageMe\WebFormsHubspot\Ui\Component\Result\Listing\MassActions\SubActions\Hubspot">
+                <settings>
+                    <type>hubspot</type>
+                    <label translate="true">Hubspot</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageMe
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MageMe.com license that is
+ * available through the world-wide-web at this URL:
+ * https://mageme.com/license
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to a newer
+ * version in the future.
+ *
+ * Copyright (c) MageMe (https://mageme.com)
+ **/
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="mm_webforms_form" resource="default" engine="innodb">
+        <column xsi:type="boolean" name="is_hubspot_enabled" nullable="false" default="0"
+                comment="Hubspot integration enabled"/>
+        <column xsi:type="boolean" name="hubspot_is_contact_enabled" nullable="false" default="0"
+                comment="Hubspot Enable Contact for Mapping"/>
+        <column xsi:type="boolean" name="hubspot_is_company_enabled" nullable="false" default="0"
+                comment="Hubspot Enable Company for Mapping"/>
+        <column xsi:type="boolean" name="hubspot_is_ticket_enabled" nullable="false" default="0"
+                comment="Hubspot Enable Ticket for Mapping"/>
+        <column xsi:type="int" name="hubspot_email_field_id" unsigned="true" nullable="true"
+                comment="Hubspot Email Override"/>
+        <column xsi:type="text" name="hubspot_owner" nullable="true"
+                comment="Hubspot Owner"/>
+        <column xsi:type="text" name="hubspot_map_fields_serialized" nullable="true"
+                comment="Hubspot Map Fields in JSON"/>
+        <column xsi:type="boolean" name="hubspot_is_contact_updated_by_email" nullable="false" default="0"
+                comment="Update contact information for existing email"/>
+        <column xsi:type="text" name="hubspot_contact_lead_status" nullable="true"
+                comment="Hubspot Contact Lead Status"/>
+        <column xsi:type="text" name="hubspot_contact_lifecycle_stage" nullable="true"
+                comment="Hubspot Contact Lifecycle Stage"/>
+        <column xsi:type="boolean" name="hubspot_is_company_updated_by_domain" nullable="false" default="0"
+                comment="Update company information for existing domain"/>
+        <column xsi:type="text" name="hubspot_ticket_pipeline" nullable="true"
+                comment="Hubspot Ticket Pipeline"/>
+        <column xsi:type="text" name="hubspot_ticket_status" nullable="true"
+                comment="Hubspot Ticket Status"/>
+        <column xsi:type="text" name="hubspot_ticket_priority" nullable="true"
+                comment="Hubspot Ticket Priority"/>
+        <column xsi:type="text" name="hubspot_ticket_source" nullable="true"
+                comment="Hubspot Ticket Source"/>
+    </table>
+</schema>

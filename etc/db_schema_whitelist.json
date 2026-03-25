@@ -1,0 +1,21 @@
+{
+    "mm_webforms_form": {
+        "column": {
+            "is_hubspot_enabled": true,
+            "hubspot_is_contact_enabled": true,
+            "hubspot_is_company_enabled": true,
+            "hubspot_is_ticket_enabled": true,
+            "hubspot_email_field_id": true,
+            "hubspot_owner": true,
+            "hubspot_map_fields_serialized": true,
+            "hubspot_is_contact_updated_by_email": true,
+            "hubspot_contact_lead_status": true,
+            "hubspot_contact_lifecycle_stage": true,
+            "hubspot_is_company_updated_by_domain": true,
+            "hubspot_ticket_pipeline": true,
+            "hubspot_ticket_status": true,
+            "hubspot_ticket_priority": true,
+            "hubspot_ticket_source": true
+        }
+    }
+}
