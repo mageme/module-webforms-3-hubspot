@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-hubspot.svg)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-hubspot.svg)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
-[![License](https://img.shields.io/packagist/l/mageme/module-webforms-3-hubspot.svg)](https://mageme.com/license/)
+[![License: Proprietary](https://img.shields.io/badge/license-proprietary-blue.svg)](https://mageme.com/license/)
 
 Send Magento 2 form submissions straight to HubSpot CRM. This free add-on for [MageMe WebForms](https://mageme.com/magento-2-form-builder.html) creates and updates HubSpot contacts, companies, and tickets — keeping your CRM in sync with every customer interaction on your store.
 
