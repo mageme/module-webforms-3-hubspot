@@ -1,8 +1,10 @@
-# Magento 2 HubSpot Integration — MageMe WebForms
+# MageMe WebForms HubSpot for Magento 2
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-hubspot.svg)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-hubspot.svg)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
-[![License: Proprietary](https://img.shields.io/badge/license-proprietary-blue.svg)](https://mageme.com/license/)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
+[![Magento](https://img.shields.io/badge/Magento-2.4.x-EE672F.svg?style=flat-square)](https://magento.com)
+[![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777BB4.svg?style=flat-square)](https://php.net)
+[![License](https://img.shields.io/badge/license-MageMe%20EULA-blue.svg?style=flat-square)](https://mageme.com/license/)
 
 Send Magento 2 form submissions straight to HubSpot CRM. This free add-on for [MageMe WebForms](https://mageme.com/magento-2-form-builder.html) creates and updates HubSpot contacts, companies, and tickets — keeping your CRM in sync with every customer interaction on your store.
 
@@ -48,17 +50,21 @@ Connect your Magento 2 forms to the tools your team already uses:
 - [Mailchimp](https://github.com/mageme/module-webforms-3-mailchimp) — subscribe customers to audiences
 - [Zapier](https://github.com/mageme/module-webforms-3-zapier) — connect forms to 7000+ apps
 
-## About MageMe WebForms
+## Custom Magento development
 
-[MageMe WebForms](https://mageme.com/magento-2-form-builder.html) lets Magento 2 merchants build any web form without writing code. From simple contact forms to complex multi-step order forms — with conditional logic, file uploads, email notifications, and CRM integrations built in.
+Need a feature an extension doesn't cover, or a bespoke Magento build? MageMe takes on custom extension development and integration work.
 
-[Get MageMe WebForms for Magento 2](https://mageme.com/magento-2-form-builder.html)
+→ **[Custom Magento development](https://mageme.com/magento-services/custom-development)**
 
 ## Support
 
 - Documentation: [docs.mageme.com](https://docs.mageme.com)
-- Issue Tracker: [GitHub Issues](https://github.com/mageme/module-webforms-3-hubspot/issues)
+- Bug reports and feature requests: [GitHub Issues](https://github.com/mageme/module-webforms-3-hubspot/issues)
 
 ## License
 
-Proprietary. See [License](https://mageme.com/license/) for details.
+Governed by the **MageMe End User License Agreement** ([mageme.com/license](https://mageme.com/license/)). This add-on is distributed free of charge.
+
+---
+
+**MageMe WebForms** is a no-code form builder for Magento 2 — conditional logic, multi-step forms, file uploads, and CRM integrations. → [Get WebForms](https://mageme.com/magento-2-form-builder.html) · [Browse all extensions](https://mageme.com/extensions)
