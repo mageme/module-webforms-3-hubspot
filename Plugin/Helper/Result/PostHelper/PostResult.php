@@ -25,6 +25,7 @@ use MageMe\WebFormsHubspot\Helper\Hubspot\AddCompany;
 use MageMe\WebFormsHubspot\Helper\Hubspot\AddContact;
 use MageMe\WebFormsHubspot\Helper\Hubspot\AddTicket;
 use Magento\Framework\Exception\NoSuchEntityException;
+use Psr\Log\LoggerInterface;
 
 class PostResult
 {
@@ -40,17 +41,23 @@ class PostResult
      * @var AddTicket
      */
     private $addTicket;
+    /**
+     * @var LoggerInterface
+     */
+    private $logger;
 
     /**
      * @param AddTicket $addTicket
      * @param AddCompany $addCompany
      * @param AddContact $addContact
+     * @param LoggerInterface $logger
      */
-    public function __construct(AddTicket $addTicket, AddCompany $addCompany, AddContact $addContact)
+    public function __construct(AddTicket $addTicket, AddCompany $addCompany, AddContact $addContact, LoggerInterface $logger)
     {
         $this->addContact = $addContact;
         $this->addCompany = $addCompany;
         $this->addTicket  = $addTicket;
+        $this->logger     = $logger;
     }
 
     /**
@@ -73,19 +80,23 @@ class PostResult
         $result    = $data['model'];
         $contactId = '';
         $companyId = '';
-        if ($form->getHubspotIsContactEnabled()) {
-            $contactId = $this->addContact->execute($result);
-        }
-        if ($form->getHubspotIsCompanyEnabled()) {
-            $companyId = $this->addCompany->execute($result, [
-                'contactId' => $contactId
-            ]);
-        }
-        if ($form->getHubspotIsTicketEnabled()) {
-            $this->addTicket->execute($result, [
-                'contactId' => $contactId,
-                'companyId' => $companyId
-            ]);
+        try {
+            if ($form->getHubspotIsContactEnabled()) {
+                $contactId = $this->addContact->execute($result);
+            }
+            if ($form->getHubspotIsCompanyEnabled()) {
+                $companyId = $this->addCompany->execute($result, [
+                    'contactId' => $contactId
+                ]);
+            }
+            if ($form->getHubspotIsTicketEnabled()) {
+                $this->addTicket->execute($result, [
+                    'contactId' => $contactId,
+                    'companyId' => $companyId
+                ]);
+            }
+        } catch (\Throwable $e) {
+            $this->logger->error('WebForms Hubspot integration failed for result #' . $result->getId() . ': ' . $e->getMessage());
         }
         return $data;
     }
