@@ -1,7 +1,7 @@
 # MageMe WebForms HubSpot for Magento 2
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-3-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-3-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-3-hubspot)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mageme/module-webforms-addon-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-addon-hubspot)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/mageme/module-webforms-addon-hubspot.svg?style=flat-square)](https://packagist.org/packages/mageme/module-webforms-addon-hubspot)
 [![Magento](https://img.shields.io/badge/Magento-2.4.x-EE672F.svg?style=flat-square)](https://magento.com)
 [![PHP](https://img.shields.io/badge/PHP-7.4%20–%208.5-777BB4.svg?style=flat-square)](https://php.net)
 [![License](https://img.shields.io/badge/license-MageMe%20EULA-blue.svg?style=flat-square)](https://mageme.com/license/)
@@ -28,7 +28,7 @@ Send Magento 2 form submissions straight to HubSpot CRM. This free add-on for [M
 ## Installation
 
 ```
-composer require mageme/module-webforms-3-hubspot
+composer require mageme/module-webforms-addon-hubspot
 bin/magento setup:upgrade
 bin/magento cache:flush
 ```
@@ -42,13 +42,13 @@ bin/magento cache:flush
 
 Connect your Magento 2 forms to the tools your team already uses:
 
-- [Salesforce](https://github.com/mageme/module-webforms-3-salesforce) — create leads from form submissions
-- [Zoho CRM & Desk](https://github.com/mageme/module-webforms-3-zoho) — create leads and support tickets
-- [Freshdesk](https://github.com/mageme/module-webforms-3-freshdesk) — create support tickets automatically
-- [Zendesk](https://github.com/mageme/module-webforms-3-zendesk) — create tickets with custom field types
-- [Klaviyo](https://github.com/mageme/module-webforms-3-klaviyo) — build profiles and grow your email lists
-- [Mailchimp](https://github.com/mageme/module-webforms-3-mailchimp) — subscribe customers to audiences
-- [Zapier](https://github.com/mageme/module-webforms-3-zapier) — connect forms to 7000+ apps
+- [Salesforce](https://github.com/mageme/module-webforms-addon-salesforce) — create leads from form submissions
+- [Zoho CRM & Desk](https://github.com/mageme/module-webforms-addon-zoho) — create leads and support tickets
+- [Freshdesk](https://github.com/mageme/module-webforms-addon-freshdesk) — create support tickets automatically
+- [Zendesk](https://github.com/mageme/module-webforms-addon-zendesk) — create tickets with custom field types
+- [Klaviyo](https://github.com/mageme/module-webforms-addon-klaviyo) — build profiles and grow your email lists
+- [Mailchimp](https://github.com/mageme/module-webforms-addon-mailchimp) — subscribe customers to audiences
+- [Zapier](https://github.com/mageme/module-webforms-addon-zapier) — connect forms to 7000+ apps
 
 ## Custom Magento development
 
@@ -59,7 +59,7 @@ Need a feature an extension doesn't cover, or a bespoke Magento build? MageMe ta
 ## Support
 
 - Documentation: [docs.mageme.com](https://docs.mageme.com)
-- Bug reports and feature requests: [GitHub Issues](https://github.com/mageme/module-webforms-3-hubspot/issues)
+- Bug reports and feature requests: [GitHub Issues](https://github.com/mageme/module-webforms-addon-hubspot/issues)
 
 ## License
 

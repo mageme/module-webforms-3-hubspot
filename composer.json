@@ -1,17 +1,20 @@
 {
-    "name": "mageme/module-webforms-3-hubspot",
+    "name": "mageme/module-webforms-addon-hubspot",
     "description": "HubSpot integration add-on for WebForms Pro 3",
     "type": "magento2-module",
     "version": "3.0.3",
     "license": "proprietary",
     "homepage": "https://mageme.com",
     "support": {
-        "issues": "https://github.com/mageme/module-webforms-3-hubspot/issues",
-        "source": "https://github.com/mageme/module-webforms-3-hubspot"
+        "issues": "https://github.com/mageme/module-webforms-addon-hubspot/issues",
+        "source": "https://github.com/mageme/module-webforms-addon-hubspot"
     },
     "require": {
         "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0||~8.5.0",
         "mageme/module-webforms-base": ">=4.0.0"
+    },
+    "replace": {
+        "mageme/module-webforms-3-hubspot": "*"
     },
     "autoload": {
         "files": [
